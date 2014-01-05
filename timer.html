@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jackson/Pollock 4 Point Fat Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="eclipse.js"></script>
+</head>
+<body>
+<center>
+	<div id="menu">
+	<ul>
+		<li class="menuitem"><a href="index.html">Body Fat Calculator  </a></li>
+
+		<li class="menuitem"><a href="timer.html">  Countdown Timer</a></li>
+	</ul>
+	</div>
+<div>
+<h1>Countdown Timer</h1>
+<form id="frm">
+	<audio id="alarm">
+		<source src="audio/gch.mp3" >
+	</audio>
+
+		<div id="display"></div><br>
+		<label for="mins">Minutes<span id="colon">:  </span></label>
+		<input id="mins" type="number" name="mins" min="0" value="0" /><br>
+		<label for="sec">Seconds<span id="colon">:  </span></label>
+		<input id="sec" type="number" name="sec" min="0" max="60" value="0" /><br><br>
+		<input id="startbutton" class="button" type="button" value="Start" onclick="count()"  /><br><br>
+		<input id="resetbutton" class="button" type="button" value="Reset" onclick="stopeverything()" /><br>
+		
+</form>
+</div></center>
+</body>
+</html>
